@@ -9,88 +9,80 @@ $(function() {
 });
 const team = [{
         name: 'Bert',
-        link: '',
-        extension: 'png'
+        link: ''
+
     },
     {
         name: 'Lucia',
-        link: '',
-        extension: 'png'
+        link: ''
+
     },
     {
         name: 'Joyce',
-        link: '',
-        extension: 'jpg'
+        link: ''
+
     },
     {
         name: 'Christophe',
-        link: '',
-        extension: 'png'
+        link: ''
+
     },
     {
         name: 'Casimir',
-        link: '',
-        extension: 'jpeg'
+        link: ''
+
     },
     {
         name: 'Ilia',
-        link: '',
-        extension: 'jpg'
+        link: ''
+
     },
     {
         name: 'Joeri',
-        link: '',
-        extension: 'jpg'
+        link: ''
+
     },
     {
         name: 'Panithi',
-        link: '',
-        extension: 'png'
+        link: ''
+
     },
     {
         name: 'Heloise',
-        link: '',
-        extension: ''
+        link: ''
+
     },
     {
         name: 'Tommy',
-        link: '',
-        extension: 'png'
+        link: ''
     },
     {
         name: 'Thomas',
-        link: '',
-        extension: 'jpg'
+        link: ''
     },
     {
         name: 'Karel',
-        link: '',
-        extension: ''
+        link: ''
     },
     {
         name: 'Indy',
-        link: '',
-        extension: ''
+        link: ''
     },
     {
         name: 'Evgeniia',
-        link: '',
-        extension: ''
+        link: ''
     },
     {
         name: 'Roger',
-        link: '',
-        extension: 'jpg'
+        link: ''
     },
     {
         name: 'Frederik',
-        link: '',
-        extension: ''
+        link: ''
     },
     {
         name: 'Ekatherina',
-        link: '',
-        extension: 'jpg'
+        link: ''
     }
 ];
 
@@ -109,7 +101,7 @@ for (let i = 0; i < team.length; i++) {
             '                        </div>';
     } else if (team[i].extension !== '') {
         mozaiek.innerHTML += '<div class="single-content col-sm-6 col-md-4 col-lg-2 my-2">\n' +
-            '                            <img class="pfp img-fluid" src="img/profile_pictures/' + team[i].name + '.' + team[i].extension + '" alt="">\n' +
+            '                            <img class="pfp img-fluid" src="img/profile_pictures/' + team[i].name + '.jpg" alt="">\n' +
             '                            <div class="text-content d-flex flex-column justify-content-between">\n' +
             '                                <div class="d-flex flex-row-reverse">\n' +
             '                                    <a class="pfp-link font-weight-bold uppercase p-1" href="' + team[i].link + '">info</a>\n' +
