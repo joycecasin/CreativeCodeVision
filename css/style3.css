@@ -1,178 +1,201 @@
-body {
-    font-family: 'Raleway', sans-serif;
-}
-
-#team {
-    position: relative;
-    top: -100px;
-    background: #fff;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.pfp {
-    filter: grayscale(100%);
-}
-
-.pfp-link,
-.pfp-link:hover {
-    text-decoration: none;
-    color: #fff;
-    padding: 5px;
-    border: 2px solid #fff;
-    margin-right: 1rem;
-    margin-top: 1rem;
-}
-
-.pfp-name {
-    font-size: 150%;
-    padding-left: 0.5rem;
-}
-
-.plate-link,
-.plate-link:hover {
-    font-size: 150%;
-    text-decoration: none;
-}
-
-.plate-text {
-    font-size: 300%;
-}
-
-.plate-gradient {
-    background: rgb(242, 90, 37);
-    background: linear-gradient(135deg, rgba(242, 90, 37, 1) 0%, rgba(244, 62, 83, 1) 100%);
-}
-
-.footer-text {
-    color: #f43e53;
-}
-
-.single-content:hover .pfp {
-    filter: none;
-}
-
-.single-content {
-    position: relative;
-    padding-bottom: 7px;
-    padding-top: 7px;
-}
-
-.single-content .text-content,
-.single-content::after {
-    position: absolute;
-}
-
-.single-content::after {
-    opacity: 0;
-}
-
-.single-content:hover:after {
-    opacity: .9;
-}
-
-.single-content img {
-    height: auto;
-}
-
-.text-content {
-    position: absolute;
-    top: 7px;
-    left: 15px;
-    width: calc(100% - 30px);
-    height: calc(100% - 14px);
-    opacity: 0;
-    z-index: 1;
-    color: #fff;
-    background: rgba(39, 39, 39, 1);
-}
-
-.single-content:hover .text-content {
-    opacity: 1;
-    background: rgba(39, 39, 39, 0.25);
-}
-
-.no-padding {
-    padding: 0 !important;
-}
-
-.gradient-footer {
-    height: 5px;
-    width: 100%;
-    background: rgb(242, 90, 37);
-    background: linear-gradient(90deg, rgba(242, 90, 37, 1) 0%, rgba(244, 62, 83, 1) 100%);
-}
-
-@media (min-width: 350px) {
-    .plate-text {
-        font-size: 100%;
-    }
-    .pfp-name {
-        font-size: 200%;
-    }
-    .pfp-link {
-        font-size: 200%;
-    }
-}
-
-@media (min-width: 576px) {
-    .plate-text {
-        font-size: 300%;
-    }
-    .pfp-name {
-        font-size: 200%;
-    }
-    .pfp-link {
-        font-size: 200%;
-    }
-}
-
-@media (min-width: 768px) {
-    .plate-text {
-        font-size: 200%;
-    }
-    .pfp-name {
-        font-size: 150%;
-    }
-    .pfp-link {
-        font-size: 150%;
-    }
-}
-
-@media (min-width: 992px) {
-    .plate-text {
-        font-size: 80%;
-    }
-    .pfp-name {
-        font-size: 50%;
-    }
-    .pfp-link {
-        font-size: 50%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .plate-text {
-        font-size: 100%;
-    }
-    .pfp-name {
-        font-size: 75%;
-    }
-    .pfp-link {
-        font-size: 75%;
-    }
-}
-
-@media (min-width: 1450px) {
-    .plate-text {
-        font-size: 150%;
-    }
-    .pfp-name {
-        font-size: 100%;
-    }
-    .pfp-link {
-        font-size: 100%;
-    }
-}
+  /*Fonts toevoegen */
+  
+  @font-face {
+      font-family: algemeneFonts;
+      src: url(../fonts/Roboto-Black.ttf);
+      font-family: navFonts;
+      src: url(../fonts/OpenSans-Regular.ttf);
+      font-family: logoFonts;
+      src: url(../fonts/Mulish-Black.ttf);
+      font-family: titelFonts;
+      src: url(../fonts/RobotoSlab-Regular.ttf);
+      font-family: onsteamFonts;
+      src: url(../fonts/Caveat-Bold.ttf);
+  }
+  
+  body {
+      font-family: algemeneFonts;
+  }
+  
+  h3 {
+      font-size: 3rem;
+  }
+  
+  #team {
+      position: relative;
+      top: -100px;
+      background: #fff;
+      font-family: onsteamFonts;
+  }
+  
+  .uppercase {
+      text-transform: uppercase;
+  }
+  
+  .pfp {
+      filter: grayscale(100%);
+  }
+  
+  .pfp-link,
+  .pfp-link:hover {
+      text-decoration: none;
+      color: #fff;
+      padding: 5px;
+      border: 2px solid #fff;
+      margin-right: 1rem;
+      margin-top: 1rem;
+  }
+  
+  .pfp-name {
+      font-size: 150%;
+      padding-left: 0.5rem;
+  }
+  
+  .plate-link,
+  .plate-link:hover {
+      font-size: 150%;
+      text-decoration: none;
+  }
+  
+  .plate-text {
+      font-size: 300%;
+  }
+  
+  .plate-gradient {
+      background: rgb(242, 90, 37);
+      background: linear-gradient(135deg, rgba(242, 90, 37, 1) 0%, rgba(244, 62, 83, 1) 100%);
+  }
+  
+  .footer-text {
+      color: #f43e53;
+      font-family: navFonts;
+      font-size: 150%;
+      margin-top: 30px;
+  }
+  
+  .single-content:hover .pfp {
+      filter: none;
+  }
+  
+  .single-content {
+      position: relative;
+      padding-bottom: 7px;
+      padding-top: 7px;
+  }
+  
+  .single-content .text-content,
+  .single-content::after {
+      position: absolute;
+  }
+  
+  .single-content::after {
+      opacity: 0;
+  }
+  
+  .single-content:hover:after {
+      opacity: .9;
+  }
+  
+  .single-content img {
+      height: auto;
+  }
+  
+  .text-content {
+      position: absolute;
+      top: 7px;
+      left: 15px;
+      width: calc(100% - 30px);
+      height: calc(100% - 14px);
+      opacity: 0;
+      z-index: 1;
+      color: #fff;
+      background: rgba(39, 39, 39, 1);
+  }
+  
+  .single-content:hover .text-content {
+      opacity: 1;
+      background: rgba(39, 39, 39, 0.25);
+  }
+  
+  .no-padding {
+      padding: 0 !important;
+  }
+  
+  .gradient-footer {
+      height: 5px;
+      width: 100%;
+      background: rgb(242, 90, 37);
+      background: linear-gradient(90deg, rgba(242, 90, 37, 1) 0%, rgba(244, 62, 83, 1) 100%);
+  }
+  
+  @media (min-width: 350px) {
+      .plate-text {
+          font-size: 100%;
+      }
+      .pfp-name {
+          font-size: 200%;
+      }
+      .pfp-link {
+          font-size: 200%;
+      }
+  }
+  
+  @media (min-width: 576px) {
+      .plate-text {
+          font-size: 300%;
+      }
+      .pfp-name {
+          font-size: 200%;
+      }
+      .pfp-link {
+          font-size: 200%;
+      }
+  }
+  
+  @media (min-width: 768px) {
+      .plate-text {
+          font-size: 200%;
+      }
+      .pfp-name {
+          font-size: 150%;
+      }
+      .pfp-link {
+          font-size: 150%;
+      }
+  }
+  
+  @media (min-width: 992px) {
+      .plate-text {
+          font-size: 80%;
+      }
+      .pfp-name {
+          font-size: 50%;
+      }
+      .pfp-link {
+          font-size: 50%;
+      }
+  }
+  
+  @media (min-width: 1200px) {
+      .plate-text {
+          font-size: 100%;
+      }
+      .pfp-name {
+          font-size: 75%;
+      }
+      .pfp-link {
+          font-size: 75%;
+      }
+  }
+  
+  @media (min-width: 1450px) {
+      .plate-text {
+          font-size: 150%;
+      }
+      .pfp-name {
+          font-size: 100%;
+      }
+      .pfp-link {
+          font-size: 100%;
+      }
+  }
