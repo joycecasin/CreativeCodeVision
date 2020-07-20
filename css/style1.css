@@ -22,6 +22,7 @@
                     body {
                         box-sizing: border-box;
                         font-family: algemeneFonts;
+                        background-image: linear-gradient(90deg, rgba(246, 66, 66, 0.171) 0%, rgba(0, 216, 254, 0.151) 100%);
                     }
                     
                     h1 {
@@ -29,6 +30,7 @@
                         font-size: 50px;
                         padding: 1rem 0 1rem;
                         font-family: algemeneFonts;
+                        text-shadow: -1px 2px 4px #000000;
                     }
                     /*   h4 {
                         letter-spacing: 0.4;
@@ -38,7 +40,7 @@
                     
                     .header {
                         height: 100vh;
-                        background-image: linear-gradient(90deg, rgba(246, 66, 66, 0.822) 0%, rgba(0, 216, 254, 0.664) 100%), url(../img/beach.jpg);
+                        background-image: linear-gradient(180deg, rgba(246, 66, 66, 0.411) 0%, rgba(0, 216, 254, 0.377) 100%), url(../img/beach.jpg);
                         background-size: cover;
                         background-position: top;
                         position: relative;
@@ -46,7 +48,7 @@
                     
                     .header__text-box {
                         position: absolute;
-                        top: 40%;
+                        top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
                         text-align: center;
@@ -69,7 +71,6 @@
                         letter-spacing: 0.3rem;
                         opacity: 0.9;
                         z-index: 1;
-                        background-color: linear-gradient(90deg, rgba(246, 66, 66, 0.822) 0%, rgba(0, 216, 254, 0.664) 100%);
                     }
                     
                     .nav-item {
