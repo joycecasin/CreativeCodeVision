@@ -24,15 +24,64 @@
   p {
       font-family: algemeneFonts;
   }
-  /* Paralax Stuff */
-  
-  .parallax-window,
-  .parallax-window-two,
-  .parallax-window-three,
-  .parallax-window-four {
-      min-height: 300px;
-      background: transparent;
+  /* Parallax */
+  section {
+      min-height: 1000px;
+      position: relative;
+      width: 100% !important;
+      min-width: 1000px;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
   }
+
+  #story-freext>div:nth-of-type(1) {
+      /*  background: linear-gradient(90deg, rgba(246, 8, 57, 0.51) 0%, rgba(0, 235, 254, 0.37) 100%),url(../img/7.jpg) 50% 0 no-repeat fixed;*/
+      background: url(../img/7.jpg) 50% 0 no-repeat fixed;
+      margin: 0;
+      height: 1600px;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+  }
+
+  #story-freext>div:nth-of-type(2) {
+
+      /* background: url(../img/Meeuw.png) 50% 0 no-repeat fixed;*/
+      background: linear-gradient(90deg, rgba(246, 66, 66, 0.3) 0%, rgba(0, 216, 254, 0.3) 100%),url(../img/Meeuw.png) 50% 0 no-repeat fixed;
+
+      margin: 0;
+      height: 1600px;
+      position: absolute;
+      top: 0px;
+      /* left: 100px;*/
+      width: 100%;
+  }
+
+  .parallax-item {
+      position: absolute;
+      z-index: 5;
+      top: 40px;
+      left: 400px;
+  }
+
+
+  /* mouseparallax*/
+  #container {
+      position: relative;
+      height: 90vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .slide {
+      display: block;
+      position: absolute;
+  }
+
+
   
   .position1 {
       position: relative;
