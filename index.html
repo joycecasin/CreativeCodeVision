@@ -41,7 +41,7 @@
             <div class="header__text-box">
                 <div class="container-fluid">
                     <div class="row text-white mt-5">
-                        <div class="col-md-6 order-sm-1 order-md-2"><img class="img-fluid" src="img/Logo2.png" alt=""></div>
+                        <div class="col-md-6 order-sm-1 order-md-2" id="container"><img class="img-fluid" src="img/Logo2.png" alt=""><div class="slide"><h4 style="font-family: onsteamFonts ">Your Vision - Our Code</h4></div></div>
                         <div class="col-md-5 offset-1 mt-5 pt-2 pb-2  order-md-1">
                             <!-- <h4>Creative Web Devs</h4> -->
                             <h1>CREATIVE CODE VISION</h1>
@@ -54,7 +54,7 @@
         </header>
     </div>
 
-    <!-- parallex-->
+    <!-- Content-->
     <div class="container  ">
         <div class="row pt-5 soul">
             <img src="img/Oostende3.jpg" class="mt-5 img2" alt="">
@@ -79,10 +79,14 @@
             </div>
         </div>
     </div>
-    <div class="parallax-window" data-parallax="scroll" data-speed="0.5" data-image-src="img/1.jpg"></div>
-    <div class="parallax-window col-6 offset-3" data-parallax="scroll" data-speed="0.5" data-image-src="img/w.jpg">
+    
+    <!-- Parallax-->
+    <section id="story-freext">
+        <div class="parallax" data-velocity="-.1"></div>
+        <div class="parallax" data-velocity="-.3" data-fit="525"></div>
+    </section>
 
-    </div>
+    <!-- Team Content-->
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
@@ -119,9 +123,18 @@
     <script src="node_modules/jquery/dist/jquery.min.js">
     </script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/parallax.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
     <script src="js/script.js"></script>
+    
+     <!-- mouseparallax-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js"></script>
+
+    <!-- Parallax-->
+    <script src="js/jquery.scrolly.js"></script>
+    <script>$(document).ready(function() { $('.parallax').scrolly({bgParallax: true}); });</script>
+    
 </body>
 
 </html>
